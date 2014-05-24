@@ -1,0 +1,16 @@
+" This file is little more than a stripped-down copy of the recommended vundle
+" loader from the official project: https://github.com/gmarik/Vundle.vim
+"
+" For use with .vimmyJimmy, the only addition is the source line.
+" There should be very rare occasion to edit this file; only when
+" the recommended Vundle loader changes.
+
+set nocompatible                  " Vundle
+filetype off                      " Vundle
+set rtp+=~/.vim/bundle/Vundle.vim " Vundle
+call vundle#begin()               " Vundle
+Plugin 'gmarik/Vundle.vim'        " Vundle
+source $vimmyJimmyPath/vundles    " .vimmyJimmy
+call vundle#end()                 " Vundle
+filetype plugin indent on         " Vundle
+
