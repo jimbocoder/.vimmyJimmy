@@ -3,8 +3,8 @@ After way too many years, this is my attempt to formalize and finally decide on 
 ### Requirements
  - https://github.com/gmarik/Vundle.vim
  - `suan/vim-instant-markdown` is included but requires a couple things first:
-   1. sudo gem install pygments.rb redcarper
-   1. sudo npm install -g instant-markdown-d
+   1. `sudo gem install pygments.rb redcarpet`
+   1. `sudo npm install -g instant-markdown-d`
 
 ### Installation
 
