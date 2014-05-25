@@ -10,7 +10,7 @@ After way too many years, this is my attempt to formalize and finally decide on 
 
   1. Clone the repo somewhere, anywhere.  I simply keep it right in my `$HOME` alongside other dotfiles:
 
-    `git clone git@github.com:jimbocoder/.vimmyJimmy.git ~/.vimmyJimmy`
+    `git clone https://github.com/jimbocoder/.vimmyJimmy.git ~/.vimmyJimmy`
 
   2.  Replace or create your `~/.vimrc` file, with the single line:
 
