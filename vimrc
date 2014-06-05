@@ -10,5 +10,9 @@ set rtp+=$vimmyJimmyPath
 " Load Vundle Bundles
 runtime vundlerc
 
-" Actually load our preferences!
+" Basic global customizations go here
+runtime vimmyJimmy.vim
+
+" Configurations that make sense grouped together (like plugin configurations,
+" or other logical groupings) should be placed in conf.d/
 runtime! conf.d/*.vim
