@@ -1,6 +1,7 @@
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'godlygeek/tabular'
 Bundle 'suan/vim-instant-markdown'
+Bundle 'tpope/vim-markdown'
 Bundle 'joonty/vim-sauce.git'
 Bundle 'Shougo/neocomplcache.vim'
 Bundle 'tpope/vim-surround'
