@@ -14,4 +14,5 @@ Bundle 'ervandew/supertab'
 Bundle 'bling/vim-airline'
 Bundle 'AndrewRadev/splitjoin.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'haya14busa/incsearch.vim'
 
