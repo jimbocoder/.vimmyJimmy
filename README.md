@@ -20,3 +20,11 @@ After way too many years, this is my attempt to formalize and finally decide on 
 
     `ln -fs ~/.vimmyJimmy/vimrc ~/.vimrc` *This will overwrite your existing .vimrc!*
 
+  3.  Either build ctrlp-cmatcher (a faster filter program), or remove it from `conf.d/ctrlp.vim`
+ 
+    ```bash
+apt-get install python-dev
+# or: yum install python-devel
+# or: brew install python
+pushd ~/.vim/bundle/ctrlp-cmatcher && ./install.sh && popd
+```
