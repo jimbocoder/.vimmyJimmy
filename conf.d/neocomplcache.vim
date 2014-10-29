@@ -1,6 +1,7 @@
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_max_list = 10
 
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}
@@ -23,3 +24,6 @@ inoremap <expr><silent> <CR> <SID>my_cr_function()
 function! s:my_cr_function()
   return pumvisible() ? neocomplcache#close_popup() . "\<CR>" : "\<CR>"
 endfunction
+
+" the preview window makes everything jump around in a distracting way
+set completeopt-=preview
