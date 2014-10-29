@@ -9,13 +9,16 @@ endif
 
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10'
 
-
 " The default key, just here for reference.
 let g:ctrlp_map = '<c-p>'
+
+" <Leader>p searches through ctags instead of filenames
+nnoremap <Leader>p :CtrlPTag<cr>
 
 " Search filesystem, buffers and MRU (most-recently-used, most-awesome) at the same time.
 let g:ctrlp_cmd = 'CtrlPMixed'
 
+" This matcher implemented in C is supposedly fastest.
 let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
 " Wait until I stop typing before searching
