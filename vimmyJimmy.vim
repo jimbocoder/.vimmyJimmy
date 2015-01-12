@@ -14,3 +14,12 @@ map <C-K> :bprev!<CR>
 map <C-L> :tabn!<CR>
 map <C-H> :tabp!<CR>
 
+map <C-N> :bd<CR>
+"mnemonic Nuke
+
+set directory=~/.vimbax//   " where to save .swp files ('//' is intentional, see help)
+
+set scrolloff=3                 " start scrolling 3 lines before end
+set sidescrolloff=3             " same, but for columns
+set pastetoggle=<F2>
+
