@@ -1,25 +1,53 @@
 set expandtab
 set hlsearch
-set wildmode=list:longest,full
 let mapleader=","
 "set expandtab
 "set number
 "set paste
 
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+set wildmode=list:full
+set wildmenu                    " make tab completion for files and buffers act like bash
+" " Files to ignore (this is also the list used by ctrlP)
+set wildignore+=~/.vim/undofiles/*,~/.vim/backup/*,*.swp  " vim working files
+set wildignore+=*.DS_Store          " macs
+set wildignore+=*.py?               " python
+set wildignore+=*.class             " java
+set wildignore+=*.jpg,*.jpeg,*.bmp,*.gif   " images
+set wildignore+=*.zip,*.so,*.exe
+
+
+autocmd FileType yaml setlocal shiftwidth=4 tabstop=4
+autocmd FileType html setlocal shiftwidth=4 tabstop=4
 autocmd FileType php setlocal shiftwidth=4 tabstop=4
+autocmd FileType xml setlocal shiftwidth=4 tabstop=4
+autocmd FileType html.twig setlocal filetype=htmljinja syntax=twig
 
-map <C-J> :bnext!<CR>
-map <C-K> :bprev!<CR>
-map <C-L> :tabn!<CR>
-map <C-H> :tabp!<CR>
+" j/k to navigate the buffer list sequentially
+nmap <C-J> :bnext!<CR>
+nmap <C-K> :bprev!<CR>
 
-map <C-N> :bd<CR>
-"mnemonic Nuke
+" L to destroy a buffer
+" Mnemonic: later, buffer!
+nmap <C-L> :bd<CR>
 
 set directory=~/.vimbax//   " where to save .swp files ('//' is intentional, see help)
 
-set scrolloff=3                 " start scrolling 3 lines before end
-set sidescrolloff=3             " same, but for columns
-set pastetoggle=<F2>
+set scrolloff=2                 " start scrolling 3 lines before end
+set sidescrolloff=2             " same, but for columns
+
+" Persistent undo
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
+
+
+set autoindent
+
+" FUCK
+set hidden
+
+" let g:DisableAutoPHPFolding=1
+
+" let php_folding = 0
 
