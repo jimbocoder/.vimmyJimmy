@@ -34,7 +34,8 @@ After way too many years, this is my attempt to formalize and finally decide on 
     ```
 
 ### Customizations
-{{{
+
+```
 This is a list of directories which will be searched for runtime
 	files:
 	  filetype.vim	filetypes by file name |new-filetype|
@@ -53,4 +54,4 @@ This is a list of directories which will be searched for runtime
 	  spell/	spell checking files |spell|
 	  syntax/	syntax files |mysyntaxfile|
 	  tutor/
-}}}
+```
