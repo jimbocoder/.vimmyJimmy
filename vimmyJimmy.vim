@@ -15,13 +15,6 @@ set wildignore+=*.class             " java
 set wildignore+=*.jpg,*.jpeg,*.bmp,*.gif   " images
 set wildignore+=*.zip,*.so,*.exe
 
-
-autocmd FileType yaml setlocal shiftwidth=4 tabstop=4
-autocmd FileType html setlocal shiftwidth=4 tabstop=4
-autocmd FileType php setlocal shiftwidth=4 tabstop=4
-autocmd FileType xml setlocal shiftwidth=4 tabstop=4
-autocmd FileType html.twig setlocal filetype=htmljinja syntax=twig
-
 " j/k to navigate the buffer list sequentially
 nmap <C-J> :bnext!<CR>
 nmap <C-K> :bprev!<CR>
