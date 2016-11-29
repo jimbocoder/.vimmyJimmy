@@ -9,7 +9,7 @@ After way too many years, this is my attempt to formalize and finally decide on 
 
     `git clone https://github.com/jimbocoder/.vimmyJimmy.git ~/src/jimbocoder/.vimmyJimmy`
 
-  2. Replace or create your `~/.vimrc` file, with the single line:
+  1. Replace or create your `~/.vimrc` file, with the single line:
 
     `source ~/src/jimbocoder/.vimmyJimmy/vimrc`
 
@@ -17,7 +17,7 @@ After way too many years, this is my attempt to formalize and finally decide on 
 
     `ln -fs ~/src/jimbocoder/.vimmyJimmy/vimrc ~/.vimrc` *This will overwrite your existing .vimrc!*
 
-  3. Either build ctrlp-cmatcher (a faster filter program), or remove it from `conf.d/ctrlp.vim`
+  1. Either build ctrlp-cmatcher (a faster filter program), or remove it from `conf.d/ctrlp.vim`
 
     ```bash
     apt-get install python-dev
@@ -26,12 +26,19 @@ After way too many years, this is my attempt to formalize and finally decide on 
     pushd ~/.vim/bundle/ctrlp-cmatcher && ./install.sh && popd
     ```
 
-  4. Set up vim-instant-markdown if you like to edit markdown files.
+  1. Set up vim-instant-markdown if you like to edit markdown files.
 
     ```bash
     sudo apt install ruby-dev npm
     sudo gem install pygments.rb redcarpet
     sudo npm install -g instant-markdown-d
+    ```
+    
+  1. YouCompleteMe prereqs
+  
+    ```bash
+    sudo apt install build-essential cmake python-dev python3-dev mono-xbuild golang-go npm nodejs-legacy rustc cargo
+    sudo npm install -g tsserver
     ```
 
 ### Customizations
