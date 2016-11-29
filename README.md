@@ -37,8 +37,13 @@ After way too many years, this is my attempt to formalize and finally decide on 
   1. YouCompleteMe prereqs
   
     ```bash
-    sudo apt install build-essential cmake python-dev python3-dev mono-xbuild golang-go npm nodejs-legacy rustc cargo
-    sudo npm install -g tsserver
+    sudo apt install build-essential cmake python-dev python3-dev
+    #sudo apt install mono-xbuild libmono-system-xml-linq4.0-cil libmono-system-data-datasetextensions4.0-cil libmono-microsoft-csharp4.0-cil
+    sudo apt install golang-go npm nodejs-legacy rustc cargo
+    sudo npm install -g typescript
+    # post-requisite:
+    cd .vim/bundle/YouCompleteMe
+    ./install.py --gocode-completer --tern-completer --racer-completer --clang-completer
     ```
 
 ### Customizations
