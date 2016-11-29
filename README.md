@@ -29,6 +29,7 @@ After way too many years, this is my attempt to formalize and finally decide on 
   4. Set up vim-instant-markdown if you like to edit markdown files.
 
     ```bash
+    sudo apt install ruby-dev npm
     sudo gem install pygments.rb redcarpet
     sudo npm install -g instant-markdown-d
     ```
