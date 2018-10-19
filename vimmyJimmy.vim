@@ -1,6 +1,6 @@
 set expandtab
 set hlsearch
-let mapleader=","
+"let mapleader=","
 "set expandtab
 "set number
 "set paste
@@ -23,7 +23,7 @@ nmap <C-K> :bprev!<CR>
 " Mnemonic: later, buffer!
 nmap <C-L> :bd<CR>
 
-set directory=~/.vimbax//   " where to save .swp files ('//' is intentional, see help)
+set directory=$vimmyJimmyPath/.vimbax//   " where to save .swp files ('//' is intentional, see help)
 
 set scrolloff=2                 " start scrolling 3 lines before end
 set sidescrolloff=2             " same, but for columns
@@ -39,8 +39,4 @@ set autoindent
 
 " FUCK
 set hidden
-
-" let g:DisableAutoPHPFolding=1
-
-" let php_folding = 0
 

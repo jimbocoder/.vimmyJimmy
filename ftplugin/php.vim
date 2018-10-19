@@ -1,4 +1,7 @@
+" colorscheme badwolf
 set number
 set tabstop=4
 set shiftwidth=4
-" colorscheme badwolf
+" let g:DisableAutoPHPFolding=1
+" let php_folding = 0
+
